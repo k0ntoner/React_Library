@@ -1,0 +1,103 @@
+.order-edit-form-container {
+    background-color: #f3f8ff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 4rem 1rem;
+}
+
+.order-edit-form-card {
+    background: #ffffff;
+    border-radius: 1.25rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    padding: 2.5rem;
+    max-width: 760px;
+    width: 100%;
+    animation: order-animate-fade-in 0.4s ease-in-out;
+}
+
+.order-edit-form-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1e3a8a;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.order-form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.order-form-group label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #374151;
+}
+
+.order-form-group input,
+.order-form-group select {
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid #d1d5db;
+    font-size: 0.95rem;
+}
+
+.order-edit-error {
+    color: #dc2626;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.order-form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.order-submit-button,
+.order-cancel-button {
+    flex: 1;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.order-submit-button {
+    background-color: #10b981;
+    color: white;
+}
+
+.order-submit-button:hover {
+    background-color: #059669;
+    transform: scale(1.05);
+}
+
+.order-cancel-button {
+    background-color: #e5e7eb;
+    color: #1f2937;
+}
+
+.order-cancel-button:hover {
+    background-color: #d1d5db;
+    transform: scale(1.05);
+}
+
+@keyframes order-animate-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,189 @@
+.copy-details-page-container {
+    background-color: #f3f8ff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 4rem 1rem;
+}
+
+.copy-details-card {
+    background: #ffffff;
+    border-radius: 1.25rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    padding: 2.5rem;
+    max-width: 720px;
+    width: 100%;
+    animation: copy-animate-fade-in 0.4s ease-in-out;
+}
+
+.copy-details-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.copy-header-icon {
+    font-size: 2.25rem;
+    opacity: 0.85;
+    margin-bottom: -5px;
+}
+
+.copy-details-title {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #1e3a8a;
+    margin-bottom: 0.25rem;
+}
+
+.copy-details-meta {
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-top: 1.25rem;
+}
+
+.copy-meta-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.copy-meta-label {
+    font-weight: 600;
+    color: #374151;
+}
+
+.copy-meta-content {
+    color: #4b5563;
+    font-size: 0.95rem;
+}
+
+.copy-status-borrowed {
+    color: #dc2626;
+    font-weight: 600;
+}
+
+.copy-button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.copy-action-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    font-size: 0.95rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.copy-back-button {
+    background: linear-gradient(to right, #2563eb, #3b60f6);
+    color: white;
+}
+
+.copy-back-button:hover {
+    background: linear-gradient(to right, #1e40af, #2563eb);
+    transform: scale(1.05);
+}
+
+.copy-delete-button {
+    background-color: #e84545;
+    color: white;
+}
+
+.copy-delete-button:hover {
+    background-color: #f11f1f;
+    transform: scale(1.05);
+}
+
+.copy-edit-button {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.copy-edit-button:hover {
+    background-color: #2563eb;
+    transform: scale(1.05);
+}
+
+@keyframes copy-animate-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.copy-confirm-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.copy-confirm-modal {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+.copy-confirm-modal-actions {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.copy-confirm-modal-confirm {
+    background-color: #dc2626;
+    color: white;
+    padding: 0.5rem 1.25rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.copy-confirm-modal-cancel {
+    background-color: #e5e7eb;
+    color: #1f2937;
+    padding: 0.5rem 1.25rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.copy-delete-error-banner {
+    background-color: #fee2e2;
+    color: #b91c1c;
+    padding: 1rem;
+    border: 1px solid #fca5a5;
+    border-radius: 0.75rem;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+    margin-top: 2rem;
+    text-align: center;
+}

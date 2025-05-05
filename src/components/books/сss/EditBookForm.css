@@ -1,0 +1,97 @@
+.book-edit-container {
+    background-color: #f3f8ff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.book-edit-card {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 16px;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+    max-width: 600px;
+    width: 100%;
+}
+
+.book-edit-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.book-edit-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.book-edit-group label {
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.book-edit-group input,
+.book-edit-group textarea {
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.book-edit-group input[readonly] {
+    background-color: #f1f5f9;
+    cursor: not-allowed;
+}
+
+.book-edit-group input:focus,
+.book-edit-group textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.book-edit-error {
+    color: #dc2626;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.book-edit-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.book-edit-submit,
+.book-edit-cancel {
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.book-edit-submit {
+    background-color: #2563eb;
+    color: white;
+}
+
+.book-edit-submit:hover {
+    background-color: #1d4ed8;
+}
+
+.book-edit-cancel {
+    background-color: #f1f5f9;
+    color: #1f2937;
+}
+
+.book-edit-cancel:hover {
+    background-color: #e2e8f0;
+}

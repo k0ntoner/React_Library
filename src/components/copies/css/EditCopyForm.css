@@ -1,0 +1,97 @@
+.copy-edit-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #f3f8ff;
+    min-height: 100vh;
+}
+
+.copy-edit-form-card {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 16px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+    max-width: 600px;
+    width: 100%;
+}
+
+.copy-edit-form-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.copy-form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.copy-form-group label {
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.copy-form-group input,
+.copy-form-group select {
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.copy-form-group input[readonly] {
+    background-color: #f1f5f9;
+    cursor: not-allowed;
+}
+
+.copy-form-group input:focus,
+.copy-form-group select:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.copy-edit-form-error {
+    color: #dc2626;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.copy-form-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.copy-edit-form-submit,
+.copy-edit-form-cancel {
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.copy-edit-form-submit {
+    background-color: #2563eb;
+    color: white;
+}
+
+.copy-edit-form-submit:hover {
+    background-color: #1d4ed8;
+}
+
+.copy-edit-form-cancel {
+    background-color: #f1f5f9;
+    color: #1f2937;
+}
+
+.copy-edit-form-cancel:hover {
+    background-color: #e2e8f0;
+}
