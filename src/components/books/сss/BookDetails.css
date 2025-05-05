@@ -1,0 +1,207 @@
+.book-details-page-container {
+    background: #f3f8ff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 4rem 1rem;
+}
+
+.book-details-card {
+    background: #ffffff;
+    border-radius: 1.25rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    padding: 2.5rem;
+    max-width: 720px;
+    width: 100%;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.book-details-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.book-header-icon {
+    font-size: 2.25rem;
+    opacity: 0.85;
+    margin-bottom: -5px;
+}
+
+.book-details-title {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #1e3a8a;
+    margin-bottom: 0.25rem;
+}
+
+.book-details-meta {
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-top: 1.25rem;
+}
+
+.book-meta-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.book-meta-label {
+    font-weight: 600;
+    margin-right: 0.25rem;
+    color: #374151;
+}
+
+.book-meta-content {
+    color: #4b5563;
+    font-size: 0.95rem;
+}
+
+.book-details-description {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #f3f4f6;
+    border-radius: 0.5rem;
+    font-size: 0.95rem;
+    color: #374151;
+    line-height: 1.4;
+    white-space: pre-line;
+    border: 1px solid #e5e7eb;
+}
+
+.book-button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.book-action-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    font-size: 0.95rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.book-delete-button {
+    background-color: #e84545;
+    color: white;
+}
+
+.book-delete-button:hover {
+    background-color: #f11f1f;
+    transform: scale(1.05);
+}
+
+.book-edit-button {
+    background: linear-gradient(to right, #2563eb, #3b60f6);
+    color: white;
+}
+
+.book-edit-button:hover {
+    background: linear-gradient(to right, #1e40af, #2563eb);
+    transform: scale(1.05);
+}
+
+.book-back-button {
+    background: linear-gradient(to right, #1e40af, #2563eb);
+    color: white;
+}
+
+.book-back-button:hover {
+    background: linear-gradient(to right, #1e3a8a, #1e40af);
+    transform: scale(1.05);
+}
+
+.book-confirm-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.book-confirm-modal {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+.book-confirm-modal-actions {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.book-confirm-modal-confirm {
+    background-color: #dc2626;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.book-confirm-modal-cancel {
+    background-color: #e5e7eb;
+    color: #1f2937;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.book-confirm-modal-confirm:hover {
+    background-color: #b91c1c;
+}
+
+.book-confirm-modal-cancel:hover {
+    background-color: #d1d5db;
+}
+
+.book-delete-error-banner {
+    background-color: #fee2e2;
+    color: #b91c1c;
+    padding: 0.75rem 1rem;
+    border: 1px solid #fca5a5;
+    border-radius: 0.75rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,120 @@
+.user-details-container {
+    background-color: #f3f8ff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 4rem 1rem;
+}
+
+.user-details-card {
+    background: #ffffff;
+    border-radius: 1.25rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    padding: 2.5rem;
+    max-width: 720px;
+    width: 100%;
+    animation: user-fade-in 0.4s ease-in-out;
+}
+
+.user-details-title {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #1e3a8a;
+    margin-bottom: 1.5rem;
+}
+
+.user-meta {
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.user-meta p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+    color: #374151;
+}
+
+.orders-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1e3a8a;
+    margin-bottom: 0.75rem;
+}
+
+.order-list {
+    padding-left: 1rem;
+}
+
+.order-item {
+    margin-bottom: 1rem;
+    background-color: #f1f5f9;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.no-orders {
+    color: #6b7280;
+}
+
+.user-edit-actions {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.user-action-button {
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    font-size: 0.95rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(to right, #2563eb, #3b82f6);
+    color: white;
+    transition: transform 0.2s ease-in-out;
+}
+
+.user-action-button:hover {
+    transform: scale(1.05);
+}
+
+.user-edit-button {
+    background-color: #3b82f6;
+}
+
+@keyframes user-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.user-details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-logout-button {
+    background-color: #f87171;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.user-logout-button:hover {
+    background-color: #dc2626;
+}

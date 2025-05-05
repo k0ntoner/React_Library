@@ -1,0 +1,92 @@
+.book-create-container {
+    background-color: #f3f8ff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.book-create-card {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 16px;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+    max-width: 600px;
+    width: 100%;
+}
+
+.book-create-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.book-create-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.book-create-group label {
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.book-create-group input,
+.book-create-group textarea {
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.book-create-group input:focus,
+.book-create-group textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.book-create-error {
+    color: #dc2626;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.book-create-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.book-create-submit,
+.book-create-cancel {
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.book-create-submit {
+    background-color: #2563eb;
+    color: white;
+}
+
+.book-create-submit:hover {
+    background-color: #1d4ed8;
+}
+
+.book-create-cancel {
+    background-color: #f1f5f9;
+    color: #1f2937;
+}
+
+.book-create-cancel:hover {
+    background-color: #e2e8f0;
+}

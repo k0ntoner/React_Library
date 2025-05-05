@@ -1,0 +1,110 @@
+
+.book-list-background {
+    min-height: 100vh;
+    background-color: #f3f8ff;
+    padding: 40px 0;
+}
+
+
+.book-list-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+
+.book-list-title {
+    text-align: center;
+    font-size: 2.25rem;
+    margin-bottom: 30px;
+    color: #1e3a8a;
+    font-weight: 700;
+}
+
+
+.book-list-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.book-list-button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: all 0.25s ease-in-out;
+    border: none;
+}
+
+.book-list-button.nav,
+.book-list-button.create {
+    background-color: #2563eb;
+    color: white;
+}
+
+.book-list-button.nav:hover,
+.book-list-button.create:hover {
+    background-color: #1e40af;
+    transform: scale(1.05);
+}
+
+/* Сітка з книгами */
+.book-list-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* Карточка книги */
+.book-list-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.book-list-field {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.book-list-label {
+    font-weight: 600;
+    margin-right: 4px;
+}
+
+.book-list-view {
+    align-self: flex-start;
+    margin-top: 5px;
+    padding: 10px 18px;
+    background-color: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.book-list-view:hover {
+    background-color: #e2e8f0;
+    transform: scale(1.03);
+}
+.book-list-button.toggle {
+    background-color: #6c757d;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.book-list-button.toggle:hover {
+    background-color: #5a6268;
+}
